@@ -127,4 +127,4 @@ jobs:
         if: steps.package.outputs.should-publish == 'true'
         env:
           TARBALL: ${{ steps.package.outputs.tarball }}
-        run: pnpm publish "$TARBALL" --access public --provenance --no-git-checks
+        run: pnpm publish "./$TARBALL" --access public --provenance --no-git-checks
