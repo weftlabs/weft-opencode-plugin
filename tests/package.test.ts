@@ -61,7 +61,7 @@ describe("package installation contract", () => {
     expect(releaseWorkflow).toContain("sha512-");
     expect(releaseWorkflow).toContain('"@weftlabs/opencode-websearch"');
     expect(releaseWorkflow).not.toContain('"@weftlab/opencode-websearch"');
-    expect(releaseWorkflow).toContain('pnpm publish "$TARBALL"');
+    expect(releaseWorkflow).toContain('pnpm publish "./$TARBALL"');
     expect(releaseWorkflow).not.toContain("NPM_TOKEN");
     expect(releaseWorkflow).not.toContain("NODE_AUTH_TOKEN");
   });
