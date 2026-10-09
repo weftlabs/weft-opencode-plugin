@@ -51,7 +51,7 @@ describe("package installation contract", () => {
 
   test("promotes the exact main CI package through npm trusted publishing", () => {
     expect(ciWorkflow).toMatch(/npm-package-\$\{\{ github\.sha \}\}/);
-    expect(ciWorkflow).toContain("actions/upload-artifact@v4");
+    expect(ciWorkflow).toContain("actions/upload-artifact@v7");
     expect(releaseWorkflow).toMatch(/release:\s*\n\s*types: \[published\]/);
     expect(releaseWorkflow).toContain("actions: read");
     expect(releaseWorkflow).toContain("id-token: write");

@@ -45,7 +45,7 @@ export function createSdkGateway(config: SearchConfig): WeftGateway {
       return {
         status: response.status,
         bodyBase64: response.bodyBase64,
-        paidUsd: response.paidUsd,
+        paidUsd: response.paidUsd ?? "0.00",
         heldUsd: response.heldUsd,
         paymentStatus: response.paymentStatus,
         artifactId: response.artifactId,

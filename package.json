@@ -24,7 +24,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@opencode-ai/plugin": "0.15.31",
+    "@opencode-ai/plugin": "0.0.0-beta-18743",
     "@weftlabs/sdk": "0.26.8"
   },
   "devDependencies": {
