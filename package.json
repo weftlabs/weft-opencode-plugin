@@ -25,10 +25,10 @@
   },
   "dependencies": {
     "@opencode-ai/plugin": "0.0.0-beta-18743",
-    "@weftlabs/sdk": "0.25.0"
+    "@weftlabs/sdk": "0.26.8"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.11",
+    "@biomejs/biome": "2.5.13",
     "@types/node": "^24.10.0",
     "tsup": "^8.5.0",
     "typescript": "^6.0.3",
